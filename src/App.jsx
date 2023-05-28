@@ -1,10 +1,12 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route } from "react-router-dom";
+import { Components, Landing } from "./pages";
+import "./App.css";
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<h1>Home</h1>} />
+      <Route path="/" element={<Landing />} />
+      <Route path="/components" element={<Components />} />
     </Routes>
   );
 };
