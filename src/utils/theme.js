@@ -2,6 +2,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import { CheckCircle } from "@mui/icons-material";
 import {
   Box,
   Card,
@@ -10,6 +11,11 @@ import {
   styled,
   Typography,
   Avatar,
+  ListItemIcon,
+  ListItem,
+  ListItemText,
+  List,
+  Button,
 } from "@mui/material";
 import { FooterTc } from "../assets";
 
@@ -110,7 +116,7 @@ export const H6White = styled(Typography)({
 
 export const TestCard = ({ img, title, tests, questions }) => {
   return (
-    <Card>
+    <Card sx={{width: "100%"}}>
       <CardMedia sx={{ height: 220 }} image={img} title={title} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -286,6 +292,191 @@ export const QNA = ({ question, answers }) => {
           {answer}
         </Typography>
       ))}
+    </Box>
+  );
+};
+
+export const OfferCardBasic = () => {
+  return (
+    <Box
+      sx={{
+        background: WHITE,
+        borderRadius: "5px",
+        width: "100%",
+        boxShadow: "-10px 7px 20px #555",
+      }}
+    >
+      <Box
+        sx={{
+          background: DARKWHITE,
+          width: "100%",
+          padding: "1rem",
+          fontSize: "22px",
+          fontWeight: "bold",
+        }}
+      >
+        BASIC
+      </Box>
+      <Box
+        sx={{
+          background: WHITE,
+          width: "100%",
+          padding: "1rem",
+        }}
+      >
+        <span style={{ padding: "1rem", fontSize: "32px", fontWeight: 700 }}>
+          $0
+        </span>
+        <List sx={{ padding: "2rem 0" }} dense={true}>
+          <ListItem>
+            <ListItemIcon>
+              <CheckCircle sx={{ color: BLUE }} />
+            </ListItemIcon>
+            <ListItemText primary="Access to free tests" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckCircle sx={{ color: BLUE }} />
+            </ListItemIcon>
+            <ListItemText primary="Basic performance tracking" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckCircle sx={{ color: BLUE }} />
+            </ListItemIcon>
+            <ListItemText primary="Solutions & explanations" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckCircle sx={{ color: BLUE }} />
+            </ListItemIcon>
+            <ListItemText primary="Tips and resources" />
+          </ListItem>
+        </List>
+        <Button
+          sx={{
+            width: "100%",
+            padding: "1rem 1.6rem",
+            fontSize: "20px",
+            color: TEXT_PRIMARY,
+            background: "#D2D6DC",
+            "&:hover": { background: "#E5E7EB" },
+          }}
+          variant="contained"
+        >
+          Free
+        </Button>
+      </Box>
+    </Box>
+  );
+};
+
+export const OfferCardAdvanced = () => {
+  return (
+    <Box
+      sx={{
+        background: WHITE,
+        borderRadius: "5px",
+        width: "100%",
+        boxShadow: "-10px 7px 20px #555",
+      }}
+    >
+      <Box
+        sx={{
+          background: DARKWHITE,
+          width: "100%",
+          padding: "1rem",
+          fontSize: "22px",
+          fontWeight: "bold",
+        }}
+      >
+        PRO
+      </Box>
+      <Box
+        sx={{
+          background: WHITE,
+          width: "100%",
+          padding: "1rem",
+        }}
+      >
+        <span style={{ padding: "1rem", fontSize: "32px", fontWeight: 700 }}>
+          $49{" "}
+          <sup style={{ fontSize: "16px", color: TEXT_SECONDARY }}>a month</sup>
+        </span>
+        <List sx={{ padding: "2rem 0" }} dense={true}>
+          <ListItem>
+            <ListItemIcon>
+              <CheckCircle sx={{ color: BLUE }} />
+            </ListItemIcon>
+            <ListItemText primary="30 Numerical reasoning tests" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckCircle sx={{ color: BLUE }} />
+            </ListItemIcon>
+            <ListItemText primary="30 Verbal reasoning tests" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckCircle sx={{ color: BLUE }} />
+            </ListItemIcon>
+            <ListItemText primary="30 Diagrammatic reasoning tests" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckCircle sx={{ color: BLUE }} />
+            </ListItemIcon>
+            <ListItemText primary="30 Situational judgement tests" />
+          </ListItem>
+
+          <ListItem>
+            <ListItemIcon>
+              <CheckCircle sx={{ color: BLUE }} />
+            </ListItemIcon>
+            <ListItemText primary="34 Publisher packages e.g. Watson Glaser" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckCircle sx={{ color: BLUE }} />
+            </ListItemIcon>
+            <ListItemText primary="251 Employer packages e.g. HSBC" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckCircle sx={{ color: BLUE }} />
+            </ListItemIcon>
+            <ListItemText primary="29 Extra packages e.g Mechanical" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckCircle sx={{ color: BLUE }} />
+            </ListItemIcon>
+            <ListItemText primary="Dashboard performance tracking" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckCircle sx={{ color: BLUE }} />
+            </ListItemIcon>
+            <ListItemText primary="Full solutions and explanations" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckCircle sx={{ color: BLUE }} />
+            </ListItemIcon>
+            <ListItemText primary="Tips, tricks, guides and resources" />
+          </ListItem>
+        </List>
+        <Button
+          sx={{
+            width: "100%",
+            padding: "1rem 1.6rem",
+            fontSize: "20px",
+          }}
+          variant="contained"
+        >
+          Upgrade to Pro
+        </Button>
+      </Box>
     </Box>
   );
 };
