@@ -16,6 +16,7 @@ import {
   ListItemText,
   List,
   Button,
+  Rating,
 } from "@mui/material";
 import { FooterTc } from "../assets";
 
@@ -116,13 +117,13 @@ export const H6White = styled(Typography)({
 
 export const TestCard = ({ img, title, tests, questions }) => {
   return (
-    <Card sx={{width: "100%"}}>
+    <Card sx={{ width: "100%" }}>
       <CardMedia sx={{ height: 220 }} image={img} title={title} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>
-        <Box sx={{ display: "flex" }}>
+        <Box mb={1} sx={{ display: "flex" }}>
           <Typography
             variant="body2"
             color="text.secondary"
@@ -138,6 +139,7 @@ export const TestCard = ({ img, title, tests, questions }) => {
             {questions} questions
           </Typography>
         </Box>
+        <Rating name="read-only" value={5} readOnly />
       </CardContent>
     </Card>
   );
