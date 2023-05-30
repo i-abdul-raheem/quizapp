@@ -7,8 +7,8 @@ export const Footer = () => {
     <>
       <Box sx={{ background: PURPLE, padding: "4rem 1rem" }}>
         <Container maxWidth="lg">
-          <Grid container spacing={2}>
-            <Grid item lg={4} md={6} sm={12}>
+          <Grid sx={{width: "100%"}} container spacing={2}>
+            <Grid sx={{width: "100%"}} item lg={4} md={6} sm={12}>
               <Box>
                 <H6 sx={{ color: BLUE }}>Top Aptitude Tests</H6>
                 <Link
@@ -43,7 +43,7 @@ export const Footer = () => {
                 </Link>
               </Box>
             </Grid>
-            <Grid item lg={4} md={6} sm={12}>
+            <Grid sx={{width: "100%"}} item lg={4} md={6} sm={12}>
               <Box>
                 <H6 sx={{ color: BLUE }}>Our Tests</H6>
                 <Link
@@ -68,7 +68,7 @@ export const Footer = () => {
                 </Link>
               </Box>
             </Grid>
-            <Grid item lg={4} md={6} sm={12}>
+            <Grid sx={{width: "100%"}} item lg={4} md={6} sm={12}>
               <TalentCard />
             </Grid>
           </Grid>

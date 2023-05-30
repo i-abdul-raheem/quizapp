@@ -11,3 +11,4 @@ export * from "./Traits";
 export * from "./AllTests";
 export * from "./QNASection";
 export * from "./LoginSignup";
+export * from "./SingleTestHero";
