@@ -12,3 +12,5 @@ export * from "./AllTests";
 export * from "./QNASection";
 export * from "./LoginSignup";
 export * from "./SingleTestHero";
+export * from "./SocialLinks";
+export * from "./FAQsSection";

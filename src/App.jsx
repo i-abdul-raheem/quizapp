@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Components, Dashboard, Landing, SingleTest } from "./pages";
+import { Components, Dashboard, Landing, Quiz, SingleTest } from "./pages";
 import "./App.css";
 
 const App = () => {
@@ -9,6 +9,7 @@ const App = () => {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/components" element={<Components />} />
       <Route path="/test-info" element={<SingleTest />} />
+      <Route path="/quiz" element={<Quiz />} />
     </Routes>
   );
 };

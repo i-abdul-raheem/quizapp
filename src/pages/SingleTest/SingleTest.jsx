@@ -1,16 +1,16 @@
-import {
-  Email,
-  Facebook,
-  LinkedIn,
-  Twitter,
-  WhatsApp,
-} from "@mui/icons-material";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import { HomeHero, TestImage } from "../../assets";
-import { Footer, Layout, Offers, ReviewsSection, SingleTestHero } from "../../components";
+import {
+  FAQsSection,
+  Footer,
+  Layout,
+  Offers,
+  ReviewsSection,
+  SingleTestHero,
+  SocialLinks,
+} from "../../components";
 import { SuccessStory } from "../../components/SuccessStory";
-import { BLUE, PrimaryButton } from "../../utils";
+import { BLUE } from "../../utils";
 
 export const SingleTest = () => {
   return (
@@ -68,94 +68,8 @@ export const SingleTest = () => {
         </Grid>
       </Container>
       <SuccessStory />
-      <Container maxWidth={"lg"} sx={{ padding: "4rem 1rem" }}>
-        <Grid container spacing={4}>
-          <Grid item sm={12} md={6} sx={{ width: "100%" }} mb={3}>
-            <Typography variant="h5" mb={2}>
-              What are the Korn Ferry competencies?
-            </Typography>
-            <Typography variant="p" mb={2}>
-              Korn Ferry has developed four dimensions of leadership and talent:
-              Competencies: observed behaviours and skills Experience: how
-              previous roles relate to future roles Traits: personality,
-              aptitudes and qualities Drivers: motivations and what engages a
-              candidate
-            </Typography>
-          </Grid>
-          <Grid item sm={12} md={6} sx={{ width: "100%" }} mb={3}>
-            <Typography variant="h5" mb={2}>
-              What are the Korn Ferry competencies?
-            </Typography>
-            <Typography variant="p" mb={2}>
-              Korn Ferry has developed four dimensions of leadership and talent:
-              Competencies: observed behaviours and skills Experience: how
-              previous roles relate to future roles Traits: personality,
-              aptitudes and qualities Drivers: motivations and what engages a
-              candidate
-            </Typography>
-          </Grid>
-          <Grid item sm={12} md={6} sx={{ width: "100%" }} mb={3}>
-            <Typography variant="h5" mb={2}>
-              What are the Korn Ferry competencies?
-            </Typography>
-            <Typography variant="p" mb={2}>
-              Korn Ferry has developed four dimensions of leadership and talent:
-              Competencies: observed behaviours and skills Experience: how
-              previous roles relate to future roles Traits: personality,
-              aptitudes and qualities Drivers: motivations and what engages a
-              candidate
-            </Typography>
-          </Grid>
-          <Grid item sm={12} md={6} sx={{ width: "100%" }} mb={3}>
-            <Typography variant="h5" mb={2}>
-              What are the Korn Ferry competencies?
-            </Typography>
-            <Typography variant="p" mb={2}>
-              Korn Ferry has developed four dimensions of leadership and talent:
-              Competencies: observed behaviours and skills Experience: how
-              previous roles relate to future roles Traits: personality,
-              aptitudes and qualities Drivers: motivations and what engages a
-              candidate
-            </Typography>
-          </Grid>
-          <Grid item sm={12} md={6} sx={{ width: "100%" }} mb={3}>
-            <Typography variant="h5" mb={2}>
-              What are the Korn Ferry competencies?
-            </Typography>
-            <Typography variant="p" mb={2}>
-              Korn Ferry has developed four dimensions of leadership and talent:
-              Competencies: observed behaviours and skills Experience: how
-              previous roles relate to future roles Traits: personality,
-              aptitudes and qualities Drivers: motivations and what engages a
-              candidate
-            </Typography>
-          </Grid>
-        </Grid>
-      </Container>
-      <Container maxWidth={"sm"} sx={{ padding: "4rem 1rem" }}>
-        <Typography
-          variant="h5"
-          mb={3}
-          sx={{ display: "block", textAlign: "center" }}
-        >
-          Enjoy what you’ve read? Let others know!
-        </Typography>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            columnGap: 4,
-            fontSize: "32px",
-          }}
-        >
-          <WhatsApp />
-          <Facebook />
-          <LinkedIn />
-          <Twitter />
-          <Email />
-        </Box>
-      </Container>
+      <FAQsSection />
+      <SocialLinks />
       <ReviewsSection />
       <Offers />
       <Footer />
