@@ -14,3 +14,4 @@ export * from "./LoginSignup";
 export * from "./SingleTestHero";
 export * from "./SocialLinks";
 export * from "./FAQsSection";
+export * from "./Admin";

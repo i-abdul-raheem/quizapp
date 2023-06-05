@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Components, Dashboard, Landing, Quiz, SingleTest } from "./pages";
 import "./App.css";
+import { Main } from "./components";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Route path="/components" element={<Components />} />
       <Route path="/test-info" element={<SingleTest />} />
       <Route path="/quiz" element={<Quiz />} />
+      <Route path="/admin" element={<Main />} />
     </Routes>
   );
 };

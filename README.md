@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+Guidelines:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For Test Creator -
 
-## Available Scripts
 
-In the project directory, you can run:
+1. I should be able to put questions in text or image format such that it is clear to the candidate. There can be multiple pics in the test question.
+2. I should be able to provide MCQs or essay type questions. For some questions, the options can be arranged in order by drag and drop.
+3. I can provide as many options as I want (up to 30)
+4. I should be able to provide a timer for each question or for the whole test.
+5. I should be able to provide multiple select questions i.e. multiple answers can be correct.
+6. I should be able to allow or disallow users to go back to previous questions.
+7. I should be able to collect the user information submitted before starting the test.
+8. I should have the ability to set a code for allowing someone to take the tests.
+9. I should be able to add symbols to the options.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+For Test taker -
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. He should be able to select one or multiple options as provided in the question.
+2. He should be able to proceed to the next question or previous question as allowed by the creator.
+3. He should automatically move to the next question with a prompt if the time for that question is over. Or the test should be finished if the time for the whole test is over.
+4. He should be able to start the test by submitting the code if the test is code enabled.
+5. He should be able to see his score and performance at the end of the test. He should be able to see the solution. He should be able to see the solutions by clicking on a link.
+6. While checking solutions, he should be able to see the marked choice, the correct choice and the solution for each question one by one. 
