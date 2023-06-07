@@ -49,7 +49,7 @@ export default function Colors() {
       <Typography id="modal-modal-title" variant="h4" component="h2" mb={3}>
         Change Colors
       </Typography>
-      <TableContainer component={Paper}>
+      <TableContainer sx={{ mb: 5 }} component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>

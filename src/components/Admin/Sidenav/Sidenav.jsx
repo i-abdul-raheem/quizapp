@@ -9,7 +9,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import {
-    ColorLens,
+  ColorLens,
   Home,
   Logout,
   Quiz,
@@ -18,7 +18,7 @@ import {
   Widgets,
 } from "@mui/icons-material";
 
-export function Sidenav() {
+export function Sidenav({ action }) {
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -46,13 +46,25 @@ export function Sidenav() {
     >
       <List>
         {[
-          { title: "Dashboard", icon: <SpaceDashboard /> },
-          { title: "Landing Page", icon: <Home /> },
-          { title: "Quizes", icon: <Quiz /> },
-          { title: "Colors", icon: <ColorLens /> },
+          {
+            title: "Dashboard",
+            icon: <SpaceDashboard />,
+            action: () => action("dashboard"),
+          },
+          {
+            title: "Landing Page",
+            icon: <Home />,
+            action: () => action("landing"),
+          },
+          { title: "Quizes", icon: <Quiz />, action: () => action("quizes") },
+          {
+            title: "Colors",
+            icon: <ColorLens />,
+            action: () => action("colors"),
+          },
         ].map((i, index) => (
           <ListItem key={index} disablePadding>
-            <ListItemButton>
+            <ListItemButton onClick={i?.action}>
               <ListItemIcon>{i?.icon}</ListItemIcon>
               <ListItemText primary={i?.title} />
             </ListItemButton>
@@ -62,11 +74,15 @@ export function Sidenav() {
       <Divider />
       <List>
         {[
-          { title: "Settings", icon: <Settings /> },
-          { title: "Logout", icon: <Logout /> },
+          {
+            title: "Settings",
+            icon: <Settings />,
+            action: () => action("settings"),
+          },
+          { title: "Logout", icon: <Logout />, action: () => action("logout") },
         ].map((i, index) => (
           <ListItem key={index} disablePadding>
-            <ListItemButton>
+            <ListItemButton onClick={i?.action}>
               <ListItemIcon>{i?.icon}</ListItemIcon>
               <ListItemText primary={i?.title} />
             </ListItemButton>
